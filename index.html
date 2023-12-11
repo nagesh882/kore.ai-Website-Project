@@ -14,13 +14,13 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
 
   <!-- card css  -->
   <link rel="stylesheet" href="css/cardcss.css">
 
+  <!-- flip_card css -->
+  <link rel="stylesheet" href="css/flip_card.css">
 
   <!-- bootstrap CDN links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -44,6 +44,61 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+  body{
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  /* background-color: #bbb;
+  color: black; */
+  background-image: url(imag/Banking-Filp-Front.png);
+  /* background-size: 300px; */
+  background-position: var();
+  background-repeat: no-repeat;
+}
+
+.flip-card-back {
+  /* background-color: #2980b9;
+  color: white; */
+  background-image: url(imag/Banking-Flip-Back.png);
+  /* background-size: 300px; */
+  background-position: var();
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+  </style>
+
 </head>
 
 <body>
@@ -60,28 +115,6 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Platform</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
           <li class="dropdown megamenu scrollto"><a href="#"><span>Solutions</span><i
                 class="bi bi-chevron-down"></i></a>
             <ul>
@@ -279,14 +312,14 @@
             <ul style="padding: 10px; margin-top: 5px;">
               <li style="width: 0; padding: 0 ; margin: 0; width: 270px;">
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043350/Services-Nav-Icon.svg"
+                    src="imag/Partner-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">Our Services<br><small>Learn about our partner program</small></p>
+                  <p class="pt-4">Partner Program<br><small>Learn about our partner program</small></p>
                 </a>
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043416/Questions-Nav-Icon.svg"
+                    src="imag/Become-Partner-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">Get Support<br><small>Join the thriving community</small></p>
+                  <p class="pt-4">Become a Partner<br><small>Join the thriving community</small></p>
                 </a>
               </li>
             </ul>
@@ -295,38 +328,47 @@
             <ul>
               <li style="width: 0; padding: 0; margin: 0; margin-right: 200px;">
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043350/Services-Nav-Icon.svg"
+                    src="imag/About-us-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">Our Services<br><small>Use professional services</small></p>
+                  <p class="pt-4">About Us</p>
                 </a>
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043416/Questions-Nav-Icon.svg"
+                    src="imag/News-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">Get Support<br><small>Get support if you are stuck up</small></p>
+                  <p class="pt-4">Newsroom</p>
                 </a>
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043431/Video-Nav-Icon.svg"
+                    src="imag/Recognition-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">Documentation<br><small>Browse developer docs, release note, how to videos</small></p>
+                  <p class="pt-4">Analyst Recognition</p>
+                </a>
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
+                    src="imag/Careers-Nav-Icon.svg"
+                    style="width: 40px;height: auto;margin: 10px;" alt="img">
+                  <p class="pt-4">Careers</p>
                 </a>
               </li>
               <i class="vr" style="border: 1px solid black;"></i>
               <li style="width: 0; padding: 0; margin: 0; margin-right: 200px;">
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043447/Developers-Nav-Icon.svg"
+                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043832/Use-Cases-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">Citizen Developers<br><small>Build sophisticated assistants using no-code
-                      platform</small></p>
+                  <p class="pt-4">Leadership</p>
                 </a>
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043501/Academy-Nav-Icon.svg"
+                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043350/Services-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">SSMG Academy<br><small>Learn conversational AI skills with free training</small></p>
+                  <p class="pt-4">Events</p>
                 </a>
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043515/Community-Nav-Icon.svg"
+                    src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043915/Whitepapers-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">SSMG Community<br><small>Ask questions, find solutions, share knowledge</small></p>
+                  <p class="pt-4">Customer Reviews</p>
+                </a>
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
+                    src="imag/Contact-Us-Nav-Icon.svg"
+                    style="width: 40px;height: auto;margin: 10px;" alt="img">
+                  <p class="pt-4">Contact</p>
                 </a>
               </li>
             </ul>
@@ -376,7 +418,7 @@
 
         <header class="section-header">
           <!-- <h2>Our Values</h2> -->
-          <p>Realize Value by Embedding<br>AI Into Your Customer and Employee Experiences</p>
+          <h3 style="color: #4B4EFC;"><strong>Realize Value by Embedding<br>AI Into Your Customer and Employee Experiences</strong></h3>
         </header>
 
         <div class="row">
@@ -396,16 +438,9 @@
                     SAVED</strong></h2>
                 By customers and agents looking for answers
               </div>
-              <!-- <div class="card" style="width: 100%"> -->
               <img src="imag/Self-Help-Asset-Background.svg" class="card-img-bottom  img-fluid"
                 style="width: 100%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
-              <!-- </div> -->
             </div>
-            <!-- <div class="box bg-light" style="border-radius: 18px;">
-              <img src="imag/Self-Help-Asset-Background.svg" class="img-fluid" alt="" style="width: 100%;">
-              <h3>Ad cupiditate sed est odio</h3>
-              <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-            </div> -->
           </div>
 
           <div class="col-lg-4 col-md-12 col-sm-12 col-xl-4 col-4" data-aos="fade-up" data-aos-delay="200">
@@ -423,16 +458,10 @@
                     GREATER</strong></h2>
                 In combination with human agent when necessary
               </div>
-              <!-- <div class="card" style="width: 100%"> -->
               <img src="imag/INTELLIGENT-VIRTUAL-AGENTS-Asset-Background.svg" class="card-img-bottom  img-fluid"
                 style="width: 100%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
-              <!-- </div> -->
             </div>
-            <!-- <div class="box bg-light" style="border-radius: 18px;">
-              <img src="assets/img/values-2.png" class="img-fluid" alt="">
-              <h3>Voluptatem voluptatum alias</h3>
-              <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-            </div> -->
+            
           </div>
           <div class="col-4 col-lg-4 col-md-12 col-sm-12 col-xl-4" data-aos="fade-up" data-aos-delay="200">
             <div class="card" style="width: 380px;border-radius: 15px;">
@@ -448,14 +477,9 @@
                     IMPROVEMENT</strong></p>
                 Incremental First Contact Resolution Rate(FCR)
               </div>
-              <img src="imag/AI-AGENT-ASSISTANCE-Asset-Background.svg" class="card-img-bottom  img-fluid"
+              <img src="imag/AI-AGENT-ASSISTANCE-Asset-Background.svg" class="card-img-bottom img-fluid"
                 style="width: 100%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             </div>
-            <!-- <div class="box bg-light" style="border-radius: 18px;">
-              <img src="assets/img/values-3.png" class="img-fluid" alt="">
-              <h3>Fugit cupiditate alias nobis.</h3>
-              <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-            </div> -->
           </div>
 
         </div>
@@ -463,65 +487,115 @@
 
     </section><!-- End Values Section -->
 
-    <style>
-    .flip-card {
-      background-color: transparent;
-      width: 300px;
-      height: 300px;
-      perspective: 1000px;
-    }
-    
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-    
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-    
-    .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
-    
-    .flip-card-front {
-      /* background-color: #bbb;
-      color: black; */
-      background-image: url(imag/store.png);
-    }
-    
-    .flip-card-back {
-      /* background-color: #2980b9;
-      color: white; */
-      background-image: url(imag/OIP.jpeg);
-      transform: rotateY(180deg);
-    }
-    </style>
-    </head>
-    <body>
-    
-    <h1>Card Flip with Text</h1>
-    <h3>Hover over the image below:</h3>
-    
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
-        </div>
-        <div class="flip-card-back">
-          <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+    <section style="background-color: #292b8b;"><!-- Flip card start -->
+      <div class="container-fluid">
+        <div class="container">
+          <h3 class="text-center text-light">
+            <strong>The Best AI Experiences Run on SSMG</strong>
+          </h3>
+          <p class="text-light text-center">We help businesses deploy trusted generative &amp; conversational AI with reduced costs and risk. The combination of the SSMG Platform, purpose-built LLM models, tight system of record integration and vertical use cases accelerate ROI.</p>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="flip-card" style="border-radius: 10px;">
+                <div class="flip-card-inner" style="border-radius: 10px;">
+                  <div class="flip-card-front p-2" style="border-radius: 10px;">
+                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Banking</strong></h5>
+                    <p style="color: black;">Which credit card offers the best travel rewards?</p>
+                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                  <div class="flip-card-back" style="border-radius: 10px;">
+                    <!-- <h5>Banking</h5>
+                    <h3>Which credit card offers the best travel rewards?</h3> -->
+                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="flip-card" style="border-radius: 10px;">
+                <div class="flip-card-inner" style="border-radius: 10px;">
+                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Insurance-Industry-Flip-Front.png);">
+                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Insurance</strong></h5>
+                    <p style="color: black;">How much am I paying for my car insurance?</p>
+                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Insurance-Industry-Flip-Back.png);">
+                    <!-- <h1>Card Flip with Text</h1>
+                    <p>Hover over the image below:</p> -->
+                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="flip-card" style="border-radius: 10px;">
+                <div class="flip-card-inner" style="border-radius: 10px;">
+                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Healthcare-Industry-Flip-Front.png);">
+                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Healthcare</strong></h5>
+                    <p style="color: black;">I need a replacement insurance ID card.</p>
+                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Healthcare-Industry-Flip-Back.png);">
+                    <!-- <h1>Card Flip with Text</h1>
+                    <h3>Hover over the image below:</h3> -->
+                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="flip-card" style="border-radius: 10px;">
+                <div class="flip-card-inner" style="border-radius: 10px;">
+                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Retail-Industry-Flip-Front.jpg);">
+                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Retail</strong></h5>
+                    <p style="color: black;">I need to reschedule home delivery for my new appliances.?</p>
+                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Retail-Industry-Flip-Back.jpg);">
+                    <!-- <h5>Banking</h5>
+                    <h3>Which credit card offers the best travel rewards?</h3> -->
+                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="flip-card" style="border-radius: 10px;">
+                <div class="flip-card-inner" style="border-radius: 10px;">
+                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Insurance-Flip-Front.png);">
+                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Human Resources</strong></h5>
+                    <p style="color: black;">How many vacation hours do I have banked for this year?</p>
+                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Insurance-Flip-Back.png);">
+                    <!-- <h1>Card Flip with Text</h1>
+                    <p>Hover over the image below:</p> -->
+                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="flip-card" style="border-radius: 10px;">
+                <div class="flip-card-inner" style="border-radius: 10px;">
+                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Human-Resources-Flip-Front.png);">
+                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Information Technology</strong></h5>
+                    <p style="color: black;">My laptop is running very slow. How do I fix this?</p>
+                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Human-Resources-Flip-Back.png);">
+                    <!-- <h1>Card Flip with Text</h1>
+                    <h3>Hover over the image below:</h3> -->
+                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section><!-- Flip card end -->
     
 
     <!-- ======= Pricing Section ======= -->
