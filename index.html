@@ -46,57 +46,58 @@
   ======================================================== -->
 
   <style>
-  body{
-    font-family: 'Nunito', sans-serif;
-  }
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
 
-  .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
 
-.flip-card-front {
-  /* background-color: #bbb;
-  color: black; */
-  background-image: url(imag/Banking-Filp-Front.png);
-  /* background-size: 300px; */
-  background-position: var();
-  background-repeat: no-repeat;
-}
+    .flip-card-front {
+      /* background-color: #bbb;
+      color: black; */
+      background-image: url(imag/Banking-Filp-Front.png);
+      /* background-size: 300px; */
+      background-position: var();
+      background-repeat: no-repeat;
+    }
 
-.flip-card-back {
-  /* background-color: #2980b9;
-  color: white; */
-  background-image: url(imag/Banking-Flip-Back.png);
-  /* background-size: 300px; */
-  background-position: var();
-  background-repeat: no-repeat;
-  transform: rotateY(180deg);
-}
+    .flip-card-back {
+      /* background-color: #2980b9;
+      color: white; */
+      background-image: url(imag/Banking-Flip-Back.png);
+      /* background-size: 300px; */
+      background-position: var();
+      background-repeat: no-repeat;
+      transform: rotateY(180deg);
+    }
   </style>
 
 </head>
@@ -108,8 +109,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span class="text-secondary">SSMG</span>
+        <img src="imag/Kore.ai_logo-latest.svg" width="124px" height="30px" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
@@ -245,12 +245,13 @@
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
                     src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043501/Academy-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">SSMG Academy<br><small>Learn conversational AI skills with free training</small></p>
+                  <p class="pt-4">kore.ai Academy<br><small>Learn conversational AI skills with free training</small>
+                  </p>
                 </a>
                 <a href="#" style="padding: 0; margin: 0;width: 0;"><img
                     src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04043515/Community-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
-                  <p class="pt-4">SSMG Community<br><small>Ask questions, find solutions, share knowledge</small></p>
+                  <p class="pt-4">kore.ai Community<br><small>Ask questions, find solutions, share knowledge</small></p>
                 </a>
               </li>
             </ul>
@@ -311,13 +312,11 @@
           <li class="dropdown"><a href="#">Parterns</span> <i class="bi bi-chevron-down"></i></a>
             <ul style="padding: 10px; margin-top: 5px;">
               <li style="width: 0; padding: 0 ; margin: 0; width: 270px;">
-                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="imag/Partner-Nav-Icon.svg"
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img src="imag/Partner-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
                   <p class="pt-4">Partner Program<br><small>Learn about our partner program</small></p>
                 </a>
-                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="imag/Become-Partner-Nav-Icon.svg"
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img src="imag/Become-Partner-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
                   <p class="pt-4">Become a Partner<br><small>Join the thriving community</small></p>
                 </a>
@@ -327,23 +326,19 @@
           <li class="dropdown megamenu scrollto"><a href="#"><span>Company</span><i class="bi bi-chevron-down"></i></a>
             <ul>
               <li style="width: 0; padding: 0; margin: 0; margin-right: 200px;">
-                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="imag/About-us-Nav-Icon.svg"
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img src="imag/About-us-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
                   <p class="pt-4">About Us</p>
                 </a>
-                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="imag/News-Nav-Icon.svg"
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img src="imag/News-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
                   <p class="pt-4">Newsroom</p>
                 </a>
-                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="imag/Recognition-Nav-Icon.svg"
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img src="imag/Recognition-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
                   <p class="pt-4">Analyst Recognition</p>
                 </a>
-                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="imag/Careers-Nav-Icon.svg"
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img src="imag/Careers-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
                   <p class="pt-4">Careers</p>
                 </a>
@@ -365,8 +360,7 @@
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
                   <p class="pt-4">Customer Reviews</p>
                 </a>
-                <a href="#" style="padding: 0; margin: 0;width: 0;"><img
-                    src="imag/Contact-Us-Nav-Icon.svg"
+                <a href="#" style="padding: 0; margin: 0;width: 0;"><img src="imag/Contact-Us-Nav-Icon.svg"
                     style="width: 40px;height: auto;margin: 10px;" alt="img">
                   <p class="pt-4">Contact</p>
                 </a>
@@ -387,9 +381,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Partnering With Businesses to Put AI to Work</h1>
-          <p data-aos="fade-up" data-aos-delay="400" class="h5">From conversational virtual assistants to generative AI
-            applications, SSMG gives you the platform, no-code tools and solutions to do AI right.</p>
+          <h2 data-aos="fade-up" style="color: #4B4EFC;"><strong>Partnering With Businesses to Put AI to Work </strong>
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="400" class="text-dark mt-4 h5">From conversational virtual assistants to
+            generative AI
+            applications, kore.ai gives you the platform, no-code tools and solutions to do AI right.</p>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
               <a href="#about"
@@ -418,13 +414,14 @@
 
         <header class="section-header">
           <!-- <h2>Our Values</h2> -->
-          <h3 style="color: #4B4EFC;"><strong>Realize Value by Embedding<br>AI Into Your Customer and Employee Experiences</strong></h3>
+          <h3 style="color: #4B4EFC;"><strong>Realize Value by Embedding<br>AI Into Your Customer and Employee
+              Experiences</strong></h3>
         </header>
 
         <div class="row">
-
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xl-4 col-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card" style="width: 380px;border-radius: 15px;">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xl-4" data-aos="fade-up" data-aos-delay="200"
+            style="margin-bottom: 8px;">
+            <div class="card" style="width: 350px;border-radius: 15px;">
               <div class="text-center text-light h6 p-3 bg-primary"
                 style="width: 100%;border-top-right-radius: 15px;border-top-left-radius: 15px;font-size: 18px;">
                 <strong>Get More From Your FAQs</strong>
@@ -443,15 +440,16 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xl-4 col-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card" style="width: 380px;border-radius: 15px;">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xl-4" data-aos="fade-up" data-aos-delay="200"
+            style="margin-bottom: 8px;">
+            <div class="card" style="width: 350px;border-radius: 15px;">
               <div class="text-center text-light h6 p-3 bg-primary"
                 style="width: 100%;border-top-right-radius: 15px;border-top-left-radius: 15px;font-size: 18px;">
                 <strong>Enable 24x7 Service More Effectively</strong>
               </div>
               <div class="card-body text-center">
                 <h2 class="card-text" style="font-size: 21px;font-weight: 500;color: #4B4EFC;"><strong>+80%
-                    INCREASE</strong></h2>
+                    INCREASE</strong></h2><br>
                 Inquiries resolved by virtual agent
                 <hr>
                 <h2 class="card-text" style="font-size: 21px;font-weight: 500;color: #4B4EFC;"><strong>=NPS OR
@@ -461,10 +459,10 @@
               <img src="imag/INTELLIGENT-VIRTUAL-AGENTS-Asset-Background.svg" class="card-img-bottom  img-fluid"
                 style="width: 100%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             </div>
-            
           </div>
-          <div class="col-4 col-lg-4 col-md-12 col-sm-12 col-xl-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card" style="width: 380px;border-radius: 15px;">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xl-4" data-aos="fade-up" data-aos-delay="200"
+            style="margin-bottom: 8px;">
+            <div class="card" style="width: 350px;border-radius: 15px;">
               <div class="text-center text-light h6 p-3 bg-primary"
                 style="width: 100%;border-top-right-radius: 15px;border-top-left-radius: 15px;font-size: 18px;">
                 <strong>Help Agents Be More Effective</strong>
@@ -481,122 +479,136 @@
                 style="width: 100%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             </div>
           </div>
-
         </div>
       </div>
-
     </section><!-- End Values Section -->
 
     <section style="background-color: #292b8b;"><!-- Flip card start -->
       <div class="container-fluid">
         <div class="container">
-          <h3 class="text-center text-light">
-            <strong>The Best AI Experiences Run on SSMG</strong>
-          </h3>
-          <p class="text-light text-center">We help businesses deploy trusted generative &amp; conversational AI with reduced costs and risk. The combination of the SSMG Platform, purpose-built LLM models, tight system of record integration and vertical use cases accelerate ROI.</p>
-          <div class="row mt-5">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="flip-card" style="border-radius: 10px;">
-                <div class="flip-card-inner" style="border-radius: 10px;">
-                  <div class="flip-card-front p-2" style="border-radius: 10px;">
-                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Banking</strong></h5>
-                    <p style="color: black;">Which credit card offers the best travel rewards?</p>
-                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                  <div class="flip-card-back" style="border-radius: 10px;">
-                    <!-- <h5>Banking</h5>
-                    <h3>Which credit card offers the best travel rewards?</h3> -->
-                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="flip-card" style="border-radius: 10px;">
-                <div class="flip-card-inner" style="border-radius: 10px;">
-                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Insurance-Industry-Flip-Front.png);">
-                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Insurance</strong></h5>
-                    <p style="color: black;">How much am I paying for my car insurance?</p>
-                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Insurance-Industry-Flip-Back.png);">
-                    <!-- <h1>Card Flip with Text</h1>
-                    <p>Hover over the image below:</p> -->
-                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+          <div class="row">
+            <h3 class="text-center text-light">
+              <strong>The Best AI Experiences Run on kore.ai</strong>
+            </h3>
+            <p class="text-light text-center">We help businesses deploy trusted generative &amp; conversational AI with
+              reduced costs and risk. The combination of the kore.ai Platform, purpose-built LLM models, tight system of
+              record integration and vertical use cases accelerate ROI.</p>
+            <!-- <div class="row mt-5"> -->
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="flip-card" style="border-radius: 10px;width: 100%;">
+                  <div class="flip-card-inner" style="border-radius: 10px;width: 100%;">
+                    <div class="flip-card-front" style="border-radius: 10px;width: 100%;background-image: url(imag/Insurance-Flip-Front.png); width: 100%;">
+                      <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Banking</strong></h5>
+                      <p style="color: black;">Which credit card offers the best travel rewards?</p>
+                      <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                    </div>
+                    <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Banking-Flip-Back.png); width: 100%;">
+                      <!-- <h5>Banking</h5>
+                        <h3>Which credit card offers the best travel rewards?</h3> -->
+                      <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="flip-card" style="border-radius: 10px;">
-                <div class="flip-card-inner" style="border-radius: 10px;">
-                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Healthcare-Industry-Flip-Front.png);">
-                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Healthcare</strong></h5>
-                    <p style="color: black;">I need a replacement insurance ID card.</p>
-                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Healthcare-Industry-Flip-Back.png);">
-                    <!-- <h1>Card Flip with Text</h1>
-                    <h3>Hover over the image below:</h3> -->
-                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          <div class="row mt-5">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="flip-card" style="border-radius: 10px;">
-                <div class="flip-card-inner" style="border-radius: 10px;">
-                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Retail-Industry-Flip-Front.jpg);">
-                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Retail</strong></h5>
-                    <p style="color: black;">I need to reschedule home delivery for my new appliances.?</p>
-                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Retail-Industry-Flip-Back.jpg);">
-                    <!-- <h5>Banking</h5>
-                    <h3>Which credit card offers the best travel rewards?</h3> -->
-                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="flip-card" style="border-radius: 10px; width: 100%;">
+                  <div class="flip-card-inner" style="border-radius: 10px; width: 100%;">
+                    <div class="flip-card-front"
+                      style="border-radius: 10px;background-image: url(imag/Insurance-Industry-Flip-Front.png);width: 100%;">
+                      <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Insurance</strong></h5>
+                      <p style="color: black;">How much am I paying for my car insurance?</p>
+                      <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                    </div>
+                    <div class="flip-card-back"
+                      style="border-radius: 10px;background-image: url(imag/Insurance-Industry-Flip-Back.png);width: 100%;">
+                      <!-- <h1>Card Flip with Text</h1>
+                        <p>Hover over the image below:</p> -->
+                      <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="flip-card" style="border-radius: 10px;">
-                <div class="flip-card-inner" style="border-radius: 10px;">
-                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Insurance-Flip-Front.png);">
-                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Human Resources</strong></h5>
-                    <p style="color: black;">How many vacation hours do I have banked for this year?</p>
-                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Insurance-Flip-Back.png);">
-                    <!-- <h1>Card Flip with Text</h1>
-                    <p>Hover over the image below:</p> -->
-                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="flip-card" style="border-radius: 10px;">
-                <div class="flip-card-inner" style="border-radius: 10px;">
-                  <div class="flip-card-front p-2" style="border-radius: 10px;background-image: url(imag/Human-Resources-Flip-Front.png);">
-                    <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Information Technology</strong></h5>
-                    <p style="color: black;">My laptop is running very slow. How do I fix this?</p>
-                    <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
-                  </div>
-                  <div class="flip-card-back" style="border-radius: 10px;background-image: url(imag/Human-Resources-Flip-Back.png);">
-                    <!-- <h1>Card Flip with Text</h1>
-                    <h3>Hover over the image below:</h3> -->
-                    <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="flip-card" style="border-radius: 10px;width: 100%;">
+                  <div class="flip-card-inner" style="border-radius: 10px;width: 100%;">
+                    <div class="flip-card-front"
+                      style="border-radius: 10px;background-image: url(imag/Healthcare-Industry-Flip-Front.png);width: 100%;">
+                      <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Healthcare</strong></h5>
+                      <p style="color: black;">I need a replacement insurance ID card.</p>
+                      <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                    </div>
+                    <div class="flip-card-back"
+                      style="border-radius: 10px;background-image: url(imag/Healthcare-Industry-Flip-Back.png);width: 100%;">
+                      <!-- <h1>Card Flip with Text</h1>
+                        <h3>Hover over the image below:</h3> -->
+                      <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <!-- <div class="row mt-5"> -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="flip-card" style="border-radius: 10px;width: 100%;">
+                    <div class="flip-card-inner" style="border-radius: 10px;width: 100%;">
+                      <div class="flip-card-front"
+                        style="border-radius: 10px;background-image: url(imag/Retail-Industry-Flip-Front.jpg);width: 100%;">
+                        <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Retail</strong></h5>
+                        <p style="color: black;">I need to reschedule home delivery for my new appliances.?</p>
+                        <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                      </div>
+                      <div class="flip-card-back"
+                        style="border-radius: 10px;background-image: url(imag/Retail-Industry-Flip-Back.jpg);width: 100%;">
+                        <!-- <h5>Banking</h5>
+                        <h3>Which credit card offers the best travel rewards?</h3> -->
+                        <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="flip-card" style="border-radius: 10px;width: 100%;">
+                    <div class="flip-card-inner" style="border-radius: 10px;width: 100%;">
+                      <div class="flip-card-front"
+                        style="border-radius: 10px;background-image: url(imag/Insurance-Flip-Front.png);width: 100%;">
+                        <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Human Resources</strong></h5>
+                        <p style="color: black;">How many vacation hours do I have banked for this year?</p>
+                        <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                      </div>
+                      <div class="flip-card-back"
+                        style="border-radius: 10px;background-image: url(imag/Insurance-Flip-Back.png);width: 100%;">
+                        <!-- <h1>Card Flip with Text</h1>
+                        <p>Hover over the image below:</p> -->
+                        <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="flip-card" style="border-radius: 10px;width: 100%;">
+                    <div class="flip-card-inner" style="border-radius: 10px;width: 100%;">
+                      <div class="flip-card-front"
+                        style="border-radius: 10px;background-image: url(imag/Human-Resources-Flip-Front.png);width: 100%;">
+                        <h5 style="color: #4B4EFC;margin-top: 8px;"><strong>Information Technology</strong></h5>
+                        <p style="color: black;">My laptop is running very slow. How do I fix this?</p>
+                        <!-- <img src="imag/OIP.jpeg" alt="Avatar" style="width:300px;height:300px;"> -->
+                      </div>
+                      <div class="flip-card-back"
+                        style="border-radius: 10px;background-image: url(imag/Human-Resources-Flip-Back.png);width: 100%;">
+                        <!-- <h1>Card Flip with Text</h1>
+                        <h3>Hover over the image below:</h3> -->
+                        <!-- <img src="imag/bird_2.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- </div> -->
+            <!-- </div> -->
           </div>
         </div>
+        
       </div>
     </section><!-- Flip card end -->
-    
+
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
